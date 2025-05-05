@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const meals = getMeals()
+  if (!meals) {
+    notFound();
+  }
   return meals.map((meal) => ({
     mealSlug: meal.slug
   }));
