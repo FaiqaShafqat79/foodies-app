@@ -9,17 +9,6 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latestname: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main] # or "master" depending on your default branch
-
-permissions:
-  contents: write
-
-jobs:
-  deploy:
     runs-on: ubuntu-latest
 
     steps:
