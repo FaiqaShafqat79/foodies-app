@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const repo = 'https://github.com/FaiqaShafqat79/foodies-app';
+const repo = 'foodies-app';
 const nextConfig = {
   output: 'export',
   basePath: `/${repo}`,
