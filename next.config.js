@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+
+const repo = 'https://github.com/FaiqaShafqat79/foodies-app';
+const nextConfig = {
+  output: 'export',
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+}
 
 module.exports = nextConfig
